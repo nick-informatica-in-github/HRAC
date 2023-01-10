@@ -1,0 +1,60 @@
+SW - 172.19.62.25 -> P3
+SW - 172.19.62.26 -> P2
+
+confere?
+
+SIM, foi o que o Odilio havia passado, mas para não estar funcionando este aqui SW - 172.19.62.26 -> P2, só pode ter visto a porta errada, pois já está configurada
+
+segura um minutinho que o reginaldo foi ver com o moço eles vao ver de novo la
+
+
+ok, estou no aguardoo
+
+
+
+
+
+vlan 303
+ description REDE DE DADOS HRAC
+ name REDE_HRAC
+
+interface Vlan-interface119
+ ip address 172.19.62.26 255.255.0.0        ---------------------->    CORRETO
+
+
+interface GigabitEthernet1/0/2
+ port access vlan 303
+ stp edged-port enable
+
+
+certo, esse daqui é a porta 2 do Switch 172.19.62.26
+
+precisa verificar o outro ponto, esse já está certo
+
+isso, estou esperando o reginaldo e o lucio voltarem, eles foram la no rack
+
+é que o anydesk subiu pra aceitar eu aceitei
+eles estao la no rack ainda
+
+ok
+
+interface Vlan-interface119
+ ip address 172.19.62.26 - esse IP é para conexão da USP
+#
+interface Vlan-interface303
+ ip address 172.23.0.5 - Esse IP é para minha conexão 172.23.0.5, depois precisa identificar os Switchs, para quando precisar dar manutenção, você me passar o meu IP de acesso ok... 172.23....  ou 172.22.....
+
+ok?
+
+Entendi
+
+
+Ta funcionando
+o outro micro?
+
+Sim 
+troquei a porta
+é o Lucio
+colocou na porta 2?Exatamente do SW 26
+
+ok olha oq escrevi para o nickolas, para ficar mais facil e rapido o meu atendimento
